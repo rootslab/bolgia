@@ -15,7 +15,7 @@ var log = console.log
         , r : /zZzz/gim
     }
     , o2 = { el : 6, arr : [ 1, undefined, [ 3, [ 4, [ 5, 6, [ 7, [ 8, 9, 10 ] ] ] ] ] ] }
-    , o3 = { a : { b1 : { k : 90, p : 89 }, b2: { j : 9 }, b3 : { g : 1, h : 2 }, b4 : { c : { d1 : { e : 0 }, d2 : { f : 0 } } } } }
+    , o3 = { a : { b1 : { k : 90, p : 89 }, b2: { j : 9 }, 'b=3' : { g : 1, h : 2 }, b4 : { c : { d1 : { e : 0 }, d2 : { f : 0 } } } } }
     , qstr1 = Bolgia.qs( o1 )
     , qstr2 = Bolgia.qs( o2 )
     , qstr3 = Bolgia.qs( o3 )
@@ -30,3 +30,7 @@ log( '\n-> querystring o2:\n', util.inspect( qstr2, !true, null, true ) );
 log( '\n- hash o3:\n', util.inspect( o3, !true, null, true ) );
 log( '\n-> querystring o3:\n', util.inspect( qstr3, !true, null, true ) );
 
+var f = {'foo=baz': 'bar', 'g=333' : { 'k=999' : 8888 }}
+
+
+log( Bolgia.qs( f ) );
