@@ -84,7 +84,7 @@ var log = console.log
         , optm : [ 'arg1', 78, 'ttt', 'zzz', undefined, null ]
         , optz : /\d+(?!\.)/gim
     }
-    , upd = Bolgia.improve( dest, src );
+    , upd = Bolgia.improve( dest, src )
     ;
 
 // log( '\n - CORRECT RESULT:\n', util.inspect( result, true, null, true ) )

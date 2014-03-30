@@ -89,7 +89,7 @@ var log = console.log
         , optm : [ 'arg1', 'arg2', 'arg3', 'zzz', undefined, null ]
         , optz : /zZzz/mig
     }
-    , upd = Bolgia.update( dest, src );
+    , upd = Bolgia.update( dest, src )
     ;
 
 // log( '\n - CORRECT RESULT:\n', util.inspect( result, true, null, true ) );
