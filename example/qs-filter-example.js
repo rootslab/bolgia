@@ -16,7 +16,7 @@ var log = console.log
     }
     , cfg = {
         filter : function ( v, vtype, o ) {
-            // null types allowed in querystring
+            // allow null types in querystring
             switch ( vtype ) {
                 // case o.nul:
                 case o.und:

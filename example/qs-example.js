@@ -20,12 +20,12 @@ var log = console.log
     , qstr2 = Bolgia.qs( o2 )
     , qstr3 = Bolgia.qs( o3 )
     ;
-/**/
+
 log( '\n- hash o1:\n', util.inspect( o1, !true, null, true ) );
 log( '\n-> querystring o1:\n', util.inspect( qstr1, !true, null, true ) );
 
 log( '\n- hash o2:\n', util.inspect( o2, !true, null, true ) );
 log( '\n-> querystring o2:\n', util.inspect( qstr2, !true, null, true ) );
-/**/
+
 log( '\n- hash o3:\n', util.inspect( o3, !true, null, true ) );
 log( '\n-> querystring o3:\n', util.inspect( qstr3, !true, null, true ) );
