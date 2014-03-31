@@ -39,7 +39,7 @@ var log = console.log
         // use ';' for delimiting instead of '&'
         dl : ';'
     }
-    result = '0=0;' +
+    , result = '0=0;' +
             'a=null;' +
             'b=;' +
             'c=Infinity;' +
