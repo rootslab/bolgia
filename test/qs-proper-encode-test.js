@@ -1,9 +1,8 @@
 #!/usr/bin/env node
 
-/* Query String Test
- * Use a custom delimiter ( ';' instead of '&' ) and
- * a custom filter function that allows null values 
- * in querystring output
+/* Query String Proper Encoding Test
+ * Proper encoding for weird fields/values 
+ * containing spaces and special chars.
  */
 
 var log = console.log

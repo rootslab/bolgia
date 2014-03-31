@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-/* Query String Test
+/* Query String Custom Options Test
  * Use a custom delimiter ( ';' instead of '&' ) and
  * a custom filter function that allows null values 
  * in querystring output
