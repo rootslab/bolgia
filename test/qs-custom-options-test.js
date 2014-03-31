@@ -58,7 +58,8 @@ var log = console.log
             'l[3][2]=c;' +
             'r=%2FzZzz%2Fgim'
     // build querystring with custom options
-    , qstr = Bolgia.qs( o1, cfg );
+    , qstr = Bolgia.qs( o1, cfg )
+    ;
 
 log( '\n- build querystring from an hash using custom optiions' );
 
@@ -80,4 +81,4 @@ log( '- check if "function" values was omitted.' );
 assert.ok( ~ qstr.indexOf( 'f=;' ), 'function values should be filtered away!' );
 
 log( '- check if querystring was properly encoded.' );
-assert.equal( qstr, result, 'wrong result for querystring!\n result:\n"' + qstr + '"\n expected:\n "' + result + '"' );
+assert.ok( qstr === result, 'wrong result for querystring!\n result: "' + qstr + '"\n expected: "' + result + '"' );
