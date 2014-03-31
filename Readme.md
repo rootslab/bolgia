@@ -92,14 +92,14 @@ Bolgia#update( Object dest, Object src ) : Object
  *   }
  * }
  */
-Bolgia#qs( Object value [, Object opt ] ) : String
+Bolgia#qs( Object hash [, Object opt ] ) : String
 
 /*
  * Method to output a (query)object representation of an hash.
  * It converts all paths to the object's nested values ( leafs )
  * to querystring keys.
  */
-Bolgia#flatten( Object value ) : Object
+Bolgia#flatten( Object hash ) : Object
 ```
 
 ###Sample Usage
@@ -202,7 +202,7 @@ log( util.inspect( cfg, !true, null, true ) );
 
 ### MIT License
 
-> Copyright (c) 2012 &lt; Guglielmo Ferri : 44gatti@gmail.com &gt;
+> Copyright (c) 2014 &lt; Guglielmo Ferri : 44gatti@gmail.com &gt;
 
 > Permission is hereby granted, free of charge, to any person obtaining
 > a copy of this software and associated documentation files (the
