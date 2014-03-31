@@ -43,7 +43,7 @@ var log = console.log
             'a=null;' +
             'b=;' +
             'c=Infinity;' +
-            'd=Wed%20Jan%2001%201913%2001%3A00%3A00%20GMT%2B0100%20(CET);' +
+            'd=' + encodeURIComponent( new Date( '1913' ) ) + ';' +
             'e=NaN;' +
             'f=;' +
             'g=0;' +
@@ -82,3 +82,6 @@ assert.ok( ~ qstr.indexOf( 'f=;' ), 'function values should be filtered away!' )
 
 log( '- check if querystring was properly encoded.' );
 assert.ok( qstr === result, 'wrong result for querystring!\n result: "' + qstr + '"\n expected: "' + result + '"' );
+
+"0=0;a=null;b=;c=Infinity;d=Wed%20Jan%2001%201913%2000%3A00%3A00%20GMT%2B0000%20(UTC);e=NaN;f=;g=0;h[prop1]=hello;h[prop2]=bye;h[prop3][0]=hi;l[0]=1;l[1]=;l[2]=3;l[3][0]=a;l[3][1]=b;l[3][2]=c;r=%2FzZzz%2Fgim"
+"0=0;a=null;b=;c=Infinity;d=Wed%20Jan%2001%201913%2001%3A00%3A00%20GMT%2B0100%20(CET);e=NaN;f=;g=0;h[prop1]=hello;h[prop2]=bye;h[prop3][0]=hi;l[0]=1;l[1]=;l[2]=3;l[3][0]=a;l[3][1]=b;l[3][2]=c;r=%2FzZzz%2Fgim"
