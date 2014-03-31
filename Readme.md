@@ -96,7 +96,7 @@ Bolgia#qs( Object hash [, Object opt ] ) : String
 
 /*
  * Method to output a (query)object representation of an hash.
- * It converts all paths to the object's nested values ( leafs )
+ * It converts all paths to the object's nested values ( leafs ),
  * to querystring keys.
  */
 Bolgia#flatten( Object hash ) : Object
