@@ -80,4 +80,4 @@ log( '- check if "function" values was omitted.' );
 assert.ok( ~ qstr.indexOf( 'f=;' ), 'function values should be filtered away!' );
 
 log( '- check if querystring was properly encoded.' );
-assert.equal( qstr, result, 'wrong result for querystring!' );
+assert.equal( qstr, result, 'wrong result for querystring!\n result:\n"' + qstr + '"\n expected:\n "' + result + '"' );
