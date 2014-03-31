@@ -81,9 +81,9 @@ Bolgia#update( Object dest, Object src ) : Object
  *   , eq : '='
  *   , filter : function ( field, ftype, otypes ) {
  *      switch ( ftype ) {
- *          case o.nul:
- *          case o.und:
- *          case o.fun:
+ *          case otypes.nul:
+ *          case otypes.und:
+ *          case otypes.fun:
  *          break;
  *          default:
  *              return true;
