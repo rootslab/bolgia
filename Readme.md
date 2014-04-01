@@ -53,7 +53,7 @@ Bolgia#mix( Object dest, Object src ) : Object
 /* 
  * improve a dest object with all properties/values
  * from a src object, with recursion.
- * It doesn't overwrites properties/values that already
+ * It doesn't overwrite properties/values that already
  * exist in the dest object.
  */
 Bolgia#improve( Object dest, Object src ) : Object
