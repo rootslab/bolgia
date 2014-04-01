@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
-/* Query String Custom Options Test
+/* Query String
+ * Custom Options Test
  * Use a custom delimiter ( ';' instead of '&' ) and
  * a custom filter function that allows null values 
  * in querystring output
@@ -68,7 +69,6 @@ log( '\n- build querystring from an hash using custom optiions' );
 
 log( '- check if "&" are replaced with ";"' );
 assert.ok( ( !~ qstr.indexOf( '&' ) ) && ( qstr.indexOf( ';' ) ), '& delimiters are not replaced by ";"!' );
-
 
 log( '- check if "null" values was admitted' );
 assert.ok( ~ qstr.indexOf( 'a=null;' ), 'null values should not be filtered!' );

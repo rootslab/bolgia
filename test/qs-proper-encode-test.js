@@ -1,8 +1,9 @@
 #!/usr/bin/env node
 
-/* Query String Proper Encoding Test
- * Proper encoding for weird fields/values 
- * containing spaces and special chars.
+/* Query String
+ * Proper Encoding Test
+ * test weird fields/values containing 
+ * spaces and special chars.
  */
 
 var log = console.log
