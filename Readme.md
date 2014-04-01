@@ -1,6 +1,11 @@
 ###Bolgia
 [![build status](https://secure.travis-ci.org/rootslab/bolgia.png?branch=master)](http://travis-ci.org/rootslab/bolgia) 
 [![NPM version](https://badge.fury.io/js/bolgia.png)](http://badge.fury.io/js/bolgia)
+
+[![NPM](https://nodei.co/npm/bolgia.png?downloads=true&stars=true)](https://nodei.co/npm/bolgia/)
+
+[![NPM](https://nodei.co/npm-dl/bolgia.png)](https://nodei.co/npm/bolgia/)
+
 > _Bolgia_, an helper module for the __config hell__.
 
 > It **recursively clone**, **mix**, **update** and **improve** 
