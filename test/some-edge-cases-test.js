@@ -1,8 +1,14 @@
 #!/usr/bin/env node
 
 /* Query String 
- * Nested Associative Arrays/Objects Encoding Test
- * Proper encoding for Arrays and Objects
+ * Edge Case
+ * Note: node-querystring module bug here:
+ * - it doesn't stringify correctly a nested
+ *   field null value,
+ *   it produces:
+ *      'h[0]=0&0=&h[1][1]=1'
+ *   should be:
+ *      'h[0]=0&h[1][0]=&h[1][1]=1'
  */
 
 var log = console.log
@@ -10,21 +16,18 @@ var log = console.log
     , util = require( 'util' )
     , Bolgia = require( '../' )
     , o1 = {
-        h : { 
-            0 : 'a'
-            , 1 : 'b'
-            , 2 : 'c'
-            , 3 : 'end'
-            , 'zZz Zzz' : 'zZzzz'
+        h : {
+            0 : 0,
+            1 : {
+                0 : null,
+                1 : 1
+            }
         }
     }
     , o2 = {
-       h : [ null, null, null, 'end' ]
+       h : [ 0, [ null, 1 ] ]
     }
-    , op = ( o2.h[ '0' ] = 'a' ) && ( o2.h[ 1 ] = 'b' ) && 
-           ( o2.h[ '2' ] = 'c' ) && ( o2.h[ 'zZz Zzz' ] = 'zZzzz' ) &&
-           true
-    , result = 'h[0]=a&h[1]=b&h[2]=c&h[3]=end&h[zZz%20Zzz]=zZzzz'
+    , result = 'h[0]=0&h[1][0]=&h[1][1]=1'
     // build querystring with custom options
     , qstr1 = Bolgia.qs( o1 )
     , qstr2 = Bolgia.qs( o2 )
