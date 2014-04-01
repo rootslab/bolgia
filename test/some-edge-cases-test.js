@@ -2,7 +2,7 @@
 
 /* Query String 
  * Edge Case
- * Note: node-querystring module bug here:
+ * Note: bug in node-querystring module:
  * - it doesn't stringify correctly a nested
  *   field null value,
  *   it produces:
