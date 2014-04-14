@@ -35,21 +35,20 @@ var Bolgia  = require( 'bolgia' );
 ```bash
 $ cd bolgia/
 $ npm test
-
 ```
 
 ###Properties
 
 ```javascript
 /*
- * Property that holds all possible types/strings returned by
- * Object#toString.
+ * Property that holds all possible types/strings returned by Object#toString.
+ *
  * It contains 2 custom string/types:
+ *
  * - "[object NaN]" for NaN
  * - "[object NullString]" for '' empty string
  */
 Bolgia#circles : Object
-
 ```
 
 ###Methods
@@ -92,9 +91,13 @@ Bolgia#update( Object dest, Object src ) : Object
  * A methods that returns a toString() representation of an object.
  *
  * NOTE: It differs from Object.toString() because for default, it
- * returns "[object Null]" for NaN or '' (empty string) values.
+ * returns:
+ *
+ * - "[object Null]" for NaN
+ * - "[object Null]" for empty string ''
  *
  * NOTE: If custom is true, it returns:
+ *
  * - "[object NaN]" for NaN
  * - "[object NullString]" for ''
  */
@@ -231,7 +234,7 @@ log( util.inspect( cfg, !true, null, true ) );
 }
 ```
 
-> _See [examples/readme-example.js](example/readme.example.js)_
+> _See **[readme-example](example/readme.example.js)**_
 
 ------------------------------------------------------------------------
 
