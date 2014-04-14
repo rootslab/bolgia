@@ -90,7 +90,7 @@ Bolgia#update( Object dest, Object src ) : Object
 /* 
  * A methods that returns a toString() representation of an object.
  *
- * NOTE: It differs from Object.toString() because for default, it
+ * NOTE: It differs from Object.toString(), because for default, it
  * returns:
  *
  * - "[object Null]" for NaN
@@ -108,20 +108,22 @@ Bolgia#toString( Object o [ , Boolean custom ] ) : String
  * It requires an object to parse and optionally a configuration object.
  * It is possible to specify custom symbols for delimiting and equality,
  * defaults are '&' and '='.
- * Note that for default, null, undefined and function values are filtered
+ *
+ * NOTE: for default, null, undefined and function values are filtered
  * away; to bypass this behaviour, it is possible to specify a custom 
- * function, for filtering which value types are allowed for querystring.
- * 
+ * function, for choosing which types are allowed for querystring.
+ * This function gets 3 args: Object field, String ftype, Object circles.
+ *
  * default configuration:
  *
  * {
  *   dl : '&'
  *   , eq : '='
- *   , filter : function ( field, ftype, otypes ) {
+ *   , filter : function ( field, ftype, circles ) {
  *      switch ( ftype ) {
- *          case otypes.nul:
- *          case otypes.und:
- *          case otypes.fun:
+ *          case circles.nul:
+ *          case circles.und:
+ *          case circles.fun:
  *          break;
  *          default:
  *              return true;
