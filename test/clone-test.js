@@ -1,6 +1,8 @@
 #!/usr/bin/env node
 
-/* Clone Test
+/* 
+ * Clone Test
+ *
  * NOTE: Don't use NaN values fot this test,
  * nodeJs assert.deepEqual returns error when
  * comparing NaN values.

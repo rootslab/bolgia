@@ -1,9 +1,12 @@
 #!/usr/bin/env node
 
-/* Update Test
+/*
+ * Update Test
+ *
  * NOTE: Don't use NaN values fot this test,
  * nodeJs assert.deepEqual returns error when
  * comparing NaN values.
+ *
  * NOTE : functions are commented to avoid a 
  * deepEqual assertion error.
  */

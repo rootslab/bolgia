@@ -35,6 +35,21 @@ var Bolgia  = require( 'bolgia' );
 ```bash
 $ cd bolgia/
 $ npm test
+
+```
+
+###Properties
+
+```javascript
+/*
+ * Property that holds all possible types/strings returned by
+ * Object#toString.
+ * It contains 2 custom string/types:
+ * - "[object NaN]" for NaN
+ * - "[object NullString]" for '' empty string
+ */
+Bolgia#circles : Object
+
 ```
 
 ###Methods
@@ -52,6 +67,7 @@ Bolgia#clone( Object obj ) : Object
  * mix/update dest object with all properties
  * from src, with no recursion.
  * It brutally overwrites dest properties/values.
+ * It returns the dest Object.
  */
 Bolgia#mix( Object dest, Object src ) : Object
 
@@ -60,6 +76,7 @@ Bolgia#mix( Object dest, Object src ) : Object
  * from a src object, with recursion.
  * It doesn't overwrite properties/values that already
  * exist in the dest object.
+ * It returns the dest Object.
  */
 Bolgia#improve( Object dest, Object src ) : Object
 
@@ -67,8 +84,21 @@ Bolgia#improve( Object dest, Object src ) : Object
  * update a dest object with all properties/values
  * from a src object, with recursion.
  * It brutally overwrites dest properties/values.
+ * It returns the dest object.
  */
 Bolgia#update( Object dest, Object src ) : Object
+
+/* 
+ * A methods that returns a toString() representation of an object.
+ *
+ * NOTE: It differs from Object.toString() because for default, it
+ * returns "[object Null]" for NaN or '' (empty string) values.
+ *
+ * NOTE: If custom is true, it returns:
+ * - "[object NaN]" for NaN
+ * - "[object NullString]" for ''
+ */
+Bolgia#toString( Object o [ , Boolean custom ] ) : String
 
 /*
  * Method to output a (query)string representation of an hash.

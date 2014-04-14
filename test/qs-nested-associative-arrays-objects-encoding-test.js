@@ -1,6 +1,8 @@
 #!/usr/bin/env node
 
-/* Query String 
+/* 
+ * Query String
+ *
  * Nested Associative Arrays/Objects Encoding Test
  * Proper encoding for Arrays and Objects
  */

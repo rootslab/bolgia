@@ -1,7 +1,9 @@
 #!/usr/bin/env node
 
-/* Query String 
- * Edge Case
+/*
+ * Query String 
+ * An Edge Case
+ *
  * Note: bug in node-querystring module:
  * - it doesn't stringify correctly a nested
  *   field null value,

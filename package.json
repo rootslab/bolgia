@@ -1,6 +1,6 @@
 {
   "name": "bolgia",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "Bolgia, an helper module for the config hell. It recursively clones, mixes, updates and improves configuration objects/hashes with nested properties. '..non ragioniam di lor, ma guarda e passa..' ",
   "homepage": "https://github.com/rootslab/bolgia",
   "private": false,
@@ -16,6 +16,7 @@
     "clone",
     "improve",
     "update",
+    "toString",
     "qs",
     "flatten",
     "querystring",
@@ -27,7 +28,6 @@
     "email": "44gatti@gmail.com"
   },
   "dependencies": {
-      "funny" : "*"
     },
   "devDependencies": {},
   "main": "index",

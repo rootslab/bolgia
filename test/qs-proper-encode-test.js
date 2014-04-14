@@ -1,6 +1,8 @@
 #!/usr/bin/env node
 
-/* Query String
+/*
+ * Query String
+ *
  * Proper Encoding Test
  * test weird fields/values containing 
  * spaces and special chars.
