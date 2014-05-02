@@ -103,6 +103,17 @@ Bolgia#update( Object dest, Object src ) : Object
  */
 Bolgia#toString( Object o [ , Boolean custom ] ) : String
 
+
+/*
+ * Recursively convert an obj/hash to an array.
+ * It optionally accepts a boolean to activate recursion
+ * and an array to collect results.
+ *
+ * NOTE: for the properties that are indexed arrays,
+ * every element will be preceded by its index.
+ */
+Bolgia#toArray = function ( Object obj [, Boolean recur [, Array result ] ] ) : Array
+
 /*
  * Method to output a (query)string representation of an hash.
  * It requires an object to parse and optionally a configuration object.
