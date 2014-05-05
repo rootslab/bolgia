@@ -115,6 +115,12 @@ Bolgia#toString( Object o [ , Boolean custom ] ) : String
 Bolgia#toArray = function ( Object obj [, Boolean recur [, Array result ] ] ) : Array
 
 /*
+ * Recursively count obj properties, 
+ * or only non-object properties (leafs).
+ */
+Bolgia#count = function ( Object obj [, Boolean leaf ] ) : Number
+
+/*
  * Method to output a (query)string representation of an hash.
  * It requires an object to parse and optionally a configuration object.
  * It is possible to specify custom symbols for delimiting and equality,
