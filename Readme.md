@@ -115,8 +115,8 @@ Bolgia#toString( Object o [ , Boolean custom ] ) : String
 Bolgia#toArray = function ( Object obj [, Boolean recur [, Array result ] ] ) : Array
 
 /*
- * Recursively count obj properties, 
- * or only non-object properties (leafs).
+ * Recursively count obj properties, or
+ * only non-object properties (leafs).
  */
 Bolgia#count = function ( Object obj [, Boolean leaf ] ) : Number
 
@@ -153,7 +153,7 @@ Bolgia#qs( Object hash [, Object opt ] ) : String
 
 /*
  * Method to output a (query)object representation of an hash.
- * It converts all paths to the object's nested values ( leafs ),
+ * It converts all paths, to the object's nested values ( leafs ),
  * to querystring keys.
  */
 Bolgia#flatten( Object hash ) : Object
