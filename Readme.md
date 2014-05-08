@@ -103,7 +103,6 @@ Bolgia#update( Object dest, Object src ) : Object
  */
 Bolgia#toString( Object o [ , Boolean custom ] ) : String
 
-
 /*
  * Recursively convert an obj/hash to an array.
  * It optionally accepts a boolean to activate recursion
@@ -113,6 +112,15 @@ Bolgia#toString( Object o [ , Boolean custom ] ) : String
  * every element will be preceded by its index.
  */
 Bolgia#toArray = function ( Object obj [, Boolean recur [, Array result ] ] ) : Array
+
+/*
+ * Recursively convert an indexed array to an hash/obj.
+ * Array elements are interpreted as a series of key/value pairs;
+ *
+ * NOTE: possible key names collision/overwriting.
+ * NOTE: every nested array will be converted to an obj/hash.
+ */
+Bolgia#toHash = function ( Array array [, Boolean recur [, Array result ] ] ) : Object
 
 /*
  * Recursively count obj properties, or
