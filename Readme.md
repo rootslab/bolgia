@@ -120,7 +120,7 @@ Bolgia#toArray = function ( Object obj [, Boolean recur [, Array result ] ] ) : 
  * NOTE: possible key names collision/overwriting.
  * NOTE: every nested array will be converted to an obj/hash.
  */
-Bolgia#toHash = function ( Array array [, Boolean recur [, Array result ] ] ) : Object
+Bolgia#toHash = function ( Array array [, Boolean recur [, Object result ] ] ) : Object
 
 /*
  * Recursively count obj properties, or
