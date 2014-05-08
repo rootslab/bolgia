@@ -10,7 +10,7 @@ var log = console.log
         , 'd' , new Date( '1913' )
         , 'e' , NaN
         , 'f' , function () {}
-        , 'g' , 0
+        , 'g' , '9999'
         , 'h' , [ 'prop1', 'hello', 'prop2', 'bye', 'prop3', [ 'hi', 'bye' ] ]
         , 'l' , [ 1, undefined, 3, [ 'a', 'b', 'c', 'd' ], 'e' ]
         , 'r' , /zZzz/gim

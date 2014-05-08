@@ -41,12 +41,11 @@ $ npm test
 
 ```javascript
 /*
- * Property that holds all possible types/strings returned by Object#toString.
+ * Property that holds all possible types/strings returned by Object#toString,
+ * with some custom types like for node Buffers: "[object Buffer]".
  *
- * It contains 2 custom string/types:
+ * See Bolgia#toString method.
  *
- * - "[object NaN]" for NaN
- * - "[object NullString]" for '' empty string
  */
 Bolgia#circles : Object
 ```
@@ -93,6 +92,7 @@ Bolgia#update( Object dest, Object src ) : Object
  * NOTE: It differs from Object.toString(), because for default, it
  * returns:
  *
+ * - "[object Buffer]" for node Buffers
  * - "[object Null]" for NaN
  * - "[object Null]" for empty string ''
  *
@@ -101,24 +101,26 @@ Bolgia#update( Object dest, Object src ) : Object
  * - "[object NaN]" for NaN
  * - "[object NullString]" for ''
  */
-Bolgia#toString( Object o [ , Boolean custom ] ) : String
+Bolgia#toString( Object o [, Boolean custom ] ) : String
 
 /*
  * Recursively convert an obj/hash to an array.
  * It optionally accepts a boolean to activate recursion
  * and an array to collect results.
  *
- * NOTE: for the properties that are indexed arrays,
- * every element will be preceded by its index.
+ * NOTE: when using indexed arrays, every element will be
+ * preceded by its index.
  */
 Bolgia#toArray = function ( Object obj [, Boolean recur [, Array result ] ] ) : Array
 
 /*
- * Recursively convert an indexed array to an hash/obj.
- * Array elements are interpreted as a series of key/value pairs;
+ * Recursively convert an indexed array to an hash/obj;
+ * optionally it converts Buffers to Strings and Strings
+ * representing numbers to Numbers.
  *
- * NOTE: possible key names collision/overwriting.
- * NOTE: every nested array will be converted to an obj/hash.
+ * NOTE: Array elements are interpreted as a series of key/value pairs.
+ * NOTE: Pay attention to possible keys collisions/overwritings.
+ * NOTE: Every nested array will be converted to an obj/hash.
  */
 Bolgia#toHash = function ( Array array [, Boolean recur [, Object result ] ] ) : Object
 
