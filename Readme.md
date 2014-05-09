@@ -125,6 +125,13 @@ Bolgia#toArray = function ( Object obj [, Boolean recur [, Array result ] ] ) : 
 Bolgia#toHash = function ( Array array [, Boolean recur [, Object result [, Boolean convert ] ] ] ) : Object
 
 /*
+ * Recursively convert a nested Array of Buffer items to Strings and Numbers.
+ *
+ * NOTE: It returns the same array instance passed as argument.
+ */
+Bolgia#reveal = function ( Array array ) : Array
+
+/*
  * Recursively count obj properties, or
  * only non-object properties (leafs).
  */
