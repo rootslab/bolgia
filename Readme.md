@@ -111,7 +111,7 @@ Bolgia#toString( Object o [, Boolean custom ] ) : String
  * NOTE: when using indexed arrays, every element will be
  * preceded by its index.
  */
-Bolgia#toArray = function ( Object obj [, Boolean recur [, Array result ] ] ) : Array
+Bolgia#toArray( Object obj [, Boolean recur [, Array result ] ] ) : Array
 
 /*
  * Recursively convert an indexed array to an hash/obj;
@@ -122,20 +122,20 @@ Bolgia#toArray = function ( Object obj [, Boolean recur [, Array result ] ] ) : 
  * NOTE: Pay attention to possible keys collisions/overwritings.
  * NOTE: Every nested array will be converted to an obj/hash.
  */
-Bolgia#toHash = function ( Array array [, Boolean recur [, Object result [, Boolean convert ] ] ] ) : Object
+Bolgia#toHash( Array array [, Boolean recur [, Object result [, Boolean convert ] ] ] ) : Object
 
 /*
  * Recursively convert a nested Array of Buffer items to Strings and Numbers.
  *
  * NOTE: It returns the same array instance passed as argument.
  */
-Bolgia#reveal = function ( Array array ) : Array
+Bolgia#reveal( Array array ) : Array
 
 /*
  * Recursively count obj properties, or
  * only non-object properties (leafs).
  */
-Bolgia#count = function ( Object obj [, Boolean leaf ] ) : Number
+Bolgia#count( Object obj [, Boolean leaf ] ) : Number
 
 /*
  * Method to output a (query)string representation of an hash.
