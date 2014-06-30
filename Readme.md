@@ -104,6 +104,11 @@ Bolgia#update( Object dest, Object src ) : Object
 Bolgia#toString( Object o [, Boolean custom ] ) : String
 
 /*
+ * #toString alias.
+ */
+Bolgia#doString( Object o [, Boolean custom ] ) : String
+
+/*
  * Recursively convert an obj/hash to an array.
  * It optionally accepts a boolean to activate recursion
  * and an array to collect results.
