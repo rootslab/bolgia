@@ -1,10 +1,19 @@
 ###Bolgia
-[![build status](https://secure.travis-ci.org/rootslab/bolgia.png?branch=master)](http://travis-ci.org/rootslab/bolgia) 
-[![NPM version](https://badge.fury.io/js/bolgia.png)](http://badge.fury.io/js/bolgia)
 
-[![NPM](https://nodei.co/npm/bolgia.png?downloads=true&stars=true)](https://nodei.co/npm/bolgia/)
+[![LICENSE](http://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/rootslab/bolgia#mit-license)
 
-[![NPM](https://nodei.co/npm-dl/bolgia.png)](https://nodei.co/npm/bolgia/)
+[![NPM VERSION](http://img.shields.io/npm/v/bolgia.svg)](https://www.npmjs.org/package/bolgia)
+[![TRAVIS CI BUILD](http://img.shields.io/travis/rootslab/bolgia.svg)](http://travis-ci.org/rootslab/bolgia)
+[![BUILD STATUS](http://img.shields.io/david/rootslab/bolgia.svg)](https://david-dm.org/rootslab/bolgia)
+
+[![NPM GRAPH1](https://nodei.co/npm-dl/bolgia.png)](https://nodei.co/npm/bolgia/)
+
+[![GITHUB tag](http://img.shields.io/github/tag/rootslab/bolgia.svg)](https://github.com/rootslab/bolgia/tags)
+[![ISSUES](http://img.shields.io/github/issues/rootslab/bolgia.svg)](https://github.com/rootslab/bolgia/issues)
+[![GITTIP](http://img.shields.io/gittip/rootslab.svg)](https://www.gittip.com/rootslab/)
+[![NPM DOWNLOADS](http://img.shields.io/npm/dm/bolgia.svg)](http://npm-stat.com/charts.html?package=bolgia)
+
+[![NPM GRAPH2](https://nodei.co/npm/bolgia.png?downloads=true&stars=true)](https://nodei.co/npm/bolgia/)
 
 > _Bolgia_, an helper module for the __config hell__.
 
