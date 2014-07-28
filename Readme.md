@@ -139,10 +139,11 @@ Bolgia#toHash( Array array [, Boolean recur [, Object result [, Boolean convert 
 /*
  * Recursively convert a nested Array of Buffer items to Strings and Numbers.
  *
- * NOTE the max integer precision is 2^53 or 9007199254740992, if the number
- * is greater than this value a string will be returned.
+ * NOTE the max integer precision is +/- 2^53, if a string/buffer represents a numeber
+ * that is >= 9007199254740992, or <= -9007199254740992, than it will be not converted
+ * to Number.
  *
-  * NOTE: It returns the same array instance passed as argument.
+ * NOTE: It returns/converts the same array instance passed as argument.
  */
 Bolgia#reveal( Array array ) : Array
 
