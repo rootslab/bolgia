@@ -1,17 +1,15 @@
 ###Bolgia
 
 [![LICENSE](http://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/rootslab/bolgia#mit-license)
+[![GITTIP](http://img.shields.io/gittip/rootslab.svg)](https://www.gittip.com/rootslab/)
+[![NPM DOWNLOADS](http://img.shields.io/npm/dm/bolgia.svg)](http://npm-stat.com/charts.html?package=bolgia)
 
 [![NPM VERSION](http://img.shields.io/npm/v/bolgia.svg)](https://www.npmjs.org/package/bolgia)
 [![TRAVIS CI BUILD](http://img.shields.io/travis/rootslab/bolgia.svg)](http://travis-ci.org/rootslab/bolgia)
 [![BUILD STATUS](http://img.shields.io/david/rootslab/bolgia.svg)](https://david-dm.org/rootslab/bolgia)
+[![DEVDEPENDENCY STATUS](http://img.shields.io/david/dev/rootslab/bolgia.svg)](https://david-dm.org/rootslab/bolgia#info=devDependencies)
 
 [![NPM GRAPH1](https://nodei.co/npm-dl/bolgia.png)](https://nodei.co/npm/bolgia/)
-
-[![GITHUB tag](http://img.shields.io/github/tag/rootslab/bolgia.svg)](https://github.com/rootslab/bolgia/tags)
-[![ISSUES](http://img.shields.io/github/issues/rootslab/bolgia.svg)](https://github.com/rootslab/bolgia/issues)
-[![GITTIP](http://img.shields.io/gittip/rootslab.svg)](https://www.gittip.com/rootslab/)
-[![NPM DOWNLOADS](http://img.shields.io/npm/dm/bolgia.svg)](http://npm-stat.com/charts.html?package=bolgia)
 
 [![NPM GRAPH2](https://nodei.co/npm/bolgia.png?downloads=true&stars=true)](https://nodei.co/npm/bolgia/)
 
@@ -141,7 +139,10 @@ Bolgia#toHash( Array array [, Boolean recur [, Object result [, Boolean convert 
 /*
  * Recursively convert a nested Array of Buffer items to Strings and Numbers.
  *
- * NOTE: It returns the same array instance passed as argument.
+ * NOTE the max integer precision is 2^53 or 9007199254740992, if the number
+ * is greater than this value a string will be returned.
+ *
+  * NOTE: It returns the same array instance passed as argument.
  */
 Bolgia#reveal( Array array ) : Array
 
