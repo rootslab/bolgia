@@ -20,7 +20,7 @@ var log = console.log
                 continue;
             }
             a[ i ] = new Buffer( String( el ) );
-        };
+        }
         return a;
     }
     , nested_array = [
@@ -32,5 +32,5 @@ var log = console.log
     , list = reveal( nested_data )
     ;
 
-log( '\n- revealed array:\n' )
+log( '\n- revealed array:\n' );
 log( util.inspect( list, false, 2, true ), '\n' );

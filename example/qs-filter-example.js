@@ -24,8 +24,7 @@ var log = console.log
                 break;
                 default:
                     return true;
-                break;
-            };
+            }
         },
         // use ';' for delimiting instead of '&'
         dl : ';'
