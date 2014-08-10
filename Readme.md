@@ -1,13 +1,16 @@
 ###Bolgia
 
-[![LICENSE](http://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/rootslab/bolgia#mit-license)
-[![GITTIP](http://img.shields.io/gittip/rootslab.svg)](https://www.gittip.com/rootslab/)
-[![NPM DOWNLOADS](http://img.shields.io/npm/dm/bolgia.svg)](http://npm-stat.com/charts.html?package=bolgia)
+[![CODECLIMATE](http://img.shields.io/codeclimate/github/rootslab/bolgia.svg?style=flat)](https://codeclimate.com/github/rootslab/bolgia)
+[![CODECLIMATE-TEST-COVERAGE](http://img.shields.io/codeclimate/coverage/github/rootslab/bolgia.svg?style=flat)](https://codeclimate.com/github/rootslab/bolgia)
 
-[![NPM VERSION](http://img.shields.io/npm/v/bolgia.svg)](https://www.npmjs.org/package/bolgia)
-[![TRAVIS CI BUILD](http://img.shields.io/travis/rootslab/bolgia.svg)](http://travis-ci.org/rootslab/bolgia)
-[![BUILD STATUS](http://img.shields.io/david/rootslab/bolgia.svg)](https://david-dm.org/rootslab/bolgia)
-[![DEVDEPENDENCY STATUS](http://img.shields.io/david/dev/rootslab/bolgia.svg)](https://david-dm.org/rootslab/bolgia#info=devDependencies)
+[![LICENSE](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](https://github.com/rootslab/bolgia#mit-license)
+[![GITTIP](http://img.shields.io/gittip/rootslab.svg?style=flat)](https://www.gittip.com/rootslab/)
+[![NPM DOWNLOADS](http://img.shields.io/npm/dm/bolgia.svg?style=flat)](http://npm-stat.com/charts.html?package=bolgia)
+
+[![NPM VERSION](http://img.shields.io/npm/v/bolgia.svg?style=flat)](https://www.npmjs.org/package/bolgia)
+[![TRAVIS CI BUILD](http://img.shields.io/travis/rootslab/bolgia.svg?style=flat)](http://travis-ci.org/rootslab/bolgia)
+[![BUILD STATUS](http://img.shields.io/david/rootslab/bolgia.svg?style=flat)](https://david-dm.org/rootslab/bolgia)
+[![DEVDEPENDENCY STATUS](http://img.shields.io/david/dev/rootslab/bolgia.svg?style=flat)](https://david-dm.org/rootslab/bolgia#info=devDependencies)
 
 [![NPM GRAPH1](https://nodei.co/npm-dl/bolgia.png)](https://nodei.co/npm/bolgia/)
 

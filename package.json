@@ -12,6 +12,8 @@
     "JSON",
     "Object",
     "config",
+    "options",
+    "constrcutor options"
     "mix",
     "clone",
     "improve",
@@ -36,7 +38,7 @@
   },
   "main": "index",
   "engines": {
-    "node": ">=0.4.x"
+    "node": ">=0.6.x"
   },
   "scripts": {
     "test": "bash test/run.sh"
