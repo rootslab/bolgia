@@ -41,7 +41,7 @@
     "node": ">=0.6.x"
   },
   "scripts": {
-    "test": "bash test/run.sh"
+    "test": "node test/run.js"
   },
   "license": "MIT",
   "readmeFilename": "Readme.md",

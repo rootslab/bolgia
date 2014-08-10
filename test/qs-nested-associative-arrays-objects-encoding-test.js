@@ -33,7 +33,7 @@ var log = console.log
     ;
 
 
-log( '\n- build querystring from an hash using default options' );
+log( '- build querystring from an hash using default options' );
 
 // log( '\n- hash o1:\n', util.inspect( o1, false, null, true ) );
 // log( '\n- hash o2:\n', util.inspect( o2, false, null, true ) );

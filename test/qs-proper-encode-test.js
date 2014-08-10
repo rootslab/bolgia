@@ -29,7 +29,7 @@ var log = console.log
     , qstr = Bolgia.qs( o1 )
     ;
 
-log( '\n- build querystring from an hash using default options' );
+log( '- build querystring from an hash using default options' );
 
 // log( '\n- hash o1:\n', util.inspect( o1, false, null, true ) );
 // log( '\n- querystring o1:\n', util.inspect( qstr, !true, null, true ) );
