@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 /* 
- * Bolgia#flatten Simple Test
+ * Bolgia#flatten and #count Simple Test
  */
 
 var log = console.log
