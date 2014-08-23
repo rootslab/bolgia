@@ -22,7 +22,7 @@ var log = console.log
                 convert( el );
                 continue;
             }
-            a[ i ] = new Buffer( String( el ) );
+            a[ i ] = el === null || el === undefined ? el : new Buffer( String( el ) );
         };
         return a;
     }
@@ -38,16 +38,18 @@ var log = console.log
     , v10 = '-100'
     , v11 = '+100'
     , v12 = 'aa'
+    , v13 = null
+    , v14 = undefined
     , nested_array = [
         [ v1, v2, [ v3 ] ]
         , [ v4, v5, [ v6, v7, v8 ] ]
-        , [ [ v9, v10, v11, v12 ] ]
+        , [ [ v9, v10, v11, v12, v13, v14 ] ]
     ]
     , nested_data = convert( nested_array )
     , expected_array = [
         [ +v1, +v2, [ v3 ] ]
         , [ +v4, v5, [ v6, v7, v8 ] ]
-        , [ [ +v9, +v10, +v11, v12 ] ]
+        , [ [ +v9, +v10, +v11, v12, v13, v14 ] ]
     ]
     , list = reveal( nested_data )
     ;
