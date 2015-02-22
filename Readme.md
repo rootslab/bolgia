@@ -1,20 +1,23 @@
 ###Bolgia
 
-[![CODECLIMATE](http://img.shields.io/codeclimate/github/rootslab/bolgia.svg?style=flat)](https://codeclimate.com/github/rootslab/bolgia)
-[![CODECLIMATE-TEST-COVERAGE](http://img.shields.io/codeclimate/coverage/github/rootslab/bolgia.svg?style=flat)](https://codeclimate.com/github/rootslab/bolgia)
-
-[![LICENSE](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](https://github.com/rootslab/bolgia#mit-license)
-[![GITTIP](http://img.shields.io/gittip/rootslab.svg?style=flat)](https://www.gittip.com/rootslab/)
-[![NPM DOWNLOADS](http://img.shields.io/npm/dm/bolgia.svg?style=flat)](http://npm-stat.com/charts.html?package=bolgia)
-
 [![NPM VERSION](http://img.shields.io/npm/v/bolgia.svg?style=flat)](https://www.npmjs.org/package/bolgia)
+[![CODACY BADGE](https://img.shields.io/codacy/b18ed7d95b0a4707a0ff7b88b30d3def.svg?style=flat)](https://www.codacy.com/public/44gatti/bolgia)
+[![CODECLIMATE](http://img.shields.io/codeclimate/github/rootslab/bolgia.svg?style=flat)](https://codeclimate.com/github/rootslab/bolgia)
+[![CODECLIMATE-TEST-COVERAGE](https://img.shields.io/codeclimate/coverage/github/rootslab/bolgia.svg?style=flat)](https://codeclimate.com/github/rootslab/bolgia)
+[![LICENSE](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](https://github.com/rootslab/bolgia#mit-license)
+
 [![TRAVIS CI BUILD](http://img.shields.io/travis/rootslab/bolgia.svg?style=flat)](http://travis-ci.org/rootslab/bolgia)
 [![BUILD STATUS](http://img.shields.io/david/rootslab/bolgia.svg?style=flat)](https://david-dm.org/rootslab/bolgia)
 [![DEVDEPENDENCY STATUS](http://img.shields.io/david/dev/rootslab/bolgia.svg?style=flat)](https://david-dm.org/rootslab/bolgia#info=devDependencies)
+[![NPM DOWNLOADS](http://img.shields.io/npm/dm/bolgia.svg?style=flat)](http://npm-stat.com/charts.html?package=bolgia)
 
 [![NPM GRAPH1](https://nodei.co/npm-dl/bolgia.png)](https://nodei.co/npm/bolgia/)
 
-[![NPM GRAPH2](https://nodei.co/npm/bolgia.png?downloads=true&stars=true)](https://nodei.co/npm/bolgia/)
+[![NPM GRAPH2](https://nodei.co/npm/bolgia.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/bolgia/)
+
+[![status](https://sourcegraph.com/api/repos/github.com/rootslab/bolgia/.badges/status.png)](https://sourcegraph.com/github.com/rootslab/bolgia)
+[![views](https://sourcegraph.com/api/repos/github.com/rootslab/bolgia/.counters/views.png)](https://sourcegraph.com/github.com/rootslab/bolgia)
+[![views 24h](https://sourcegraph.com/api/repos/github.com/rootslab/bolgia/.counters/views-24h.png)](https://sourcegraph.com/github.com/rootslab/bolgia)
 
 > _Bolgia_, an helper module for the __config hell__.
 
@@ -295,7 +298,7 @@ log( util.inspect( cfg, !true, null, true ) );
 
 ### MIT License
 
-> Copyright (c) 2014 &lt; Guglielmo Ferri : 44gatti@gmail.com &gt;
+> Copyright (c) 2015 &lt; Guglielmo Ferri : 44gatti@gmail.com &gt;
 
 > Permission is hereby granted, free of charge, to any person obtaining
 > a copy of this software and associated documentation files (the
