@@ -1,23 +1,19 @@
-###Bolgia
+### Bolgia
 
 [![NPM VERSION](http://img.shields.io/npm/v/bolgia.svg?style=flat)](https://www.npmjs.org/package/bolgia)
 [![CODACY BADGE](https://img.shields.io/codacy/b18ed7d95b0a4707a0ff7b88b30d3def.svg?style=flat)](https://www.codacy.com/public/44gatti/bolgia)
-[![CODECLIMATE](http://img.shields.io/codeclimate/github/rootslab/bolgia.svg?style=flat)](https://codeclimate.com/github/rootslab/bolgia)
 [![CODECLIMATE-TEST-COVERAGE](https://img.shields.io/codeclimate/coverage/github/rootslab/bolgia.svg?style=flat)](https://codeclimate.com/github/rootslab/bolgia)
 [![LICENSE](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](https://github.com/rootslab/bolgia#mit-license)
 
+![NODE VERSION](https://img.shields.io/node/v/bolgia.svg)
 [![TRAVIS CI BUILD](http://img.shields.io/travis/rootslab/bolgia.svg?style=flat)](http://travis-ci.org/rootslab/bolgia)
 [![BUILD STATUS](http://img.shields.io/david/rootslab/bolgia.svg?style=flat)](https://david-dm.org/rootslab/bolgia)
 [![DEVDEPENDENCY STATUS](http://img.shields.io/david/dev/rootslab/bolgia.svg?style=flat)](https://david-dm.org/rootslab/bolgia#info=devDependencies)
-[![NPM DOWNLOADS](http://img.shields.io/npm/dm/bolgia.svg?style=flat)](http://npm-stat.com/charts.html?package=bolgia)
 
-[![NPM GRAPH1](https://nodei.co/npm-dl/bolgia.png)](https://nodei.co/npm/bolgia/)
+[![NPM MONTHLY](http://img.shields.io/npm/dm/bolgia.svg?style=flat)](http://npm-stat.com/charts.html?package=bolgia)
+![NPM YEARLY](https://img.shields.io/npm/dy/bolgia.svg)
 
-[![NPM GRAPH2](https://nodei.co/npm/bolgia.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/bolgia/)
-
-[![status](https://sourcegraph.com/api/repos/github.com/rootslab/bolgia/.badges/status.png)](https://sourcegraph.com/github.com/rootslab/bolgia)
-[![views](https://sourcegraph.com/api/repos/github.com/rootslab/bolgia/.counters/views.png)](https://sourcegraph.com/github.com/rootslab/bolgia)
-[![views 24h](https://sourcegraph.com/api/repos/github.com/rootslab/bolgia/.counters/views-24h.png)](https://sourcegraph.com/github.com/rootslab/bolgia)
+[![NPM GRAPH](https://nodei.co/npm/bolgia.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/bolgia/)
 
 > _Bolgia_, an helper module for the __config hell__.
 
@@ -26,7 +22,7 @@
 
 > _˝..non ragioniam di lor, ma guarda e passa.._˝
 
-###Install
+### Install
 
 ```bash
 $ npm install bolgia [-g]
@@ -43,14 +39,14 @@ var Bolgia  = require( 'bolgia' );
 > _require_ returns an helper hash/obj with some properties/methods.
 > See [examples](example/).
 
-###Run Tests
+### Run Tests
 
 ```bash
 $ cd bolgia/
 $ npm test
 ```
 
-###Properties
+### Properties
 
 ```javascript
 /*
@@ -63,7 +59,7 @@ $ npm test
 Bolgia#circles : Object
 ```
 
-###Methods
+### Methods
 
 > Arguments within [ ] are optional.
 
@@ -132,6 +128,11 @@ Bolgia#doString( Object o [, Boolean custom ] ) : String
 Bolgia#toArray( Object obj [, Boolean recur [, Array result ] ] ) : Array
 
 /*
+ * Same as the method above, but it lists only enumerable properties
+ */
+Bolgia#toArrayEnum( Object obj [, Boolean recur [, Array result ] ] ) : Array
+
+/*
  * Recursively convert an indexed array to an hash/obj;
  * optionally it converts Buffers to Strings and Strings
  * representing numbers to Numbers.
@@ -198,7 +199,7 @@ Bolgia#qs( Object hash [, Object opt ] ) : String
 Bolgia#flatten( Object hash ) : Object
 ```
 
-###Sample Usage
+### Sample Usage
 
 > _**require** libs:_
 
@@ -298,7 +299,7 @@ log( util.inspect( cfg, !true, null, true ) );
 
 ### MIT License
 
-> Copyright (c) 2015 &lt; Guglielmo Ferri : 44gatti@gmail.com &gt;
+> Copyright (c) 2015-present &lt; Guglielmo Ferri : 44gatti@gmail.com &gt;
 
 > Permission is hereby granted, free of charge, to any person obtaining
 > a copy of this software and associated documentation files (the

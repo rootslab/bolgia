@@ -32,8 +32,8 @@ assert.ok( toString( obj.NaN, true ) === ooo.nan, 'wrong return type for NaN!' )
 log( '- test toString with "", expected result is [object NullString]' );
 assert.ok( toString( obj.empty_string, true ) === ooo.nst, 'wrong type for empty string!' );
 
-log( '- test toString with a Buffer Object, expected result is [object Buffer]' );
-assert.ok( toString( obj.buffer ) === ooo.buf, 'wrong return type for NaN!' );
-
 log( '- test toString with an Object, expected result is [object Object]' );
-assert.ok( toString( {} ) === ooo.obj, 'wrong return type for NaN!' );
+assert.ok( toString( {} ) === ooo.obj, 'wrong return type for Object!' );
+
+log( '- test toString with a Buffer Object, expected result is [object Buffer]' );
+assert.ok( toString( obj.buffer ) === ooo.buf, 'wrong return type for Buffer!' );
