@@ -20,7 +20,7 @@
 > It **recursively clone**, **mix**, **update** and **improve** 
 > configuration objects/hashes with **nested** properties.
 
-> _˝..non ragioniam di lor, ma guarda e passa.._˝
+> _˝..non ragioniam di lor, ma guarda e passa..˝_
 
 ### Install
 
