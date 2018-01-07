@@ -2,7 +2,7 @@
 
 [![NPM VERSION](http://img.shields.io/npm/v/bolgia.svg?style=flat)](https://www.npmjs.org/package/bolgia)
 [![CODACY BADGE](https://img.shields.io/codacy/b18ed7d95b0a4707a0ff7b88b30d3def.svg?style=flat)](https://www.codacy.com/public/44gatti/bolgia)
-[![CODECLIMATE-TEST-COVERAGE](https://img.shields.io/codeclimate/coverage/github/rootslab/bolgia.svg?style=flat)](https://codeclimate.com/github/rootslab/bolgia)
+[![CODECLIMATE-TEST-COVERAGE](https://img.shields.io/codeclimate/c/rootslab/bolgia.svg?style=flat)](https://codeclimate.com/github/rootslab/bolgia)
 [![LICENSE](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](https://github.com/rootslab/bolgia#mit-license)
 
 ![NODE VERSION](https://img.shields.io/node/v/bolgia.svg)
@@ -12,6 +12,7 @@
 
 [![NPM MONTHLY](http://img.shields.io/npm/dm/bolgia.svg?style=flat)](http://npm-stat.com/charts.html?package=bolgia)
 ![NPM YEARLY](https://img.shields.io/npm/dy/bolgia.svg)
+[![NPM TOTAL](https://img.shields.io/npm/dt/bolgia.svg)](http://npm-stat.com/charts.html?package=bolgia)
 
 [![NPM GRAPH](https://nodei.co/npm/bolgia.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/bolgia/)
 
